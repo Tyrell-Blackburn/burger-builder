@@ -16,10 +16,11 @@ const orderSummary = props => {
     return (
         <Aux>
             <h3>Your Order</h3>
-            <p>A delicious burget wirht eh following ingredients:</p>
+            <p>A delicious burget with the following ingredients:</p>
             <ul>
                 {ingredientSummary}
             </ul>
+            <p><strong>Total Price : ${props.price.toFixed(2)}</strong></p>
             <p>Continue to Check Out</p>
             <Button btnType='Danger' clicked={props.purchaseCancelled}>Cancel</Button>
             <Button btnType='Success' clicked={props.purchaseContinued}>Continue</Button>

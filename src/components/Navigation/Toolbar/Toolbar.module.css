@@ -1,0 +1,20 @@
+/* setup for mobile first */
+
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    position: fixed; /* always at the top even if we scroll */
+    top: 0;
+    left: 0;
+    background-color: #703b09;
+    display: flex; /* so all the items in the toolbar are aligned */
+    justify-content: space-between; /* the available space is filled by the elements inside Toolbar */
+    align-items: center;
+    padding: 0 20px; /* 0 top and bottom, 20px left and right */
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar nav {
+    height: 100%; /* this makes sure the nav items span the full height of the toolbar */
+}
