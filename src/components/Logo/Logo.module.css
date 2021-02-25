@@ -1,0 +1,11 @@
+.Logo {
+    background-color: white;
+    padding: 8px;
+    height: 100%;
+    box-sizing: border-box; /* ensures the 80% height includes the padding */
+    border-radius: 5px; /* adds curved sides */
+}
+
+.Logo img {
+    height: 100%;
+}

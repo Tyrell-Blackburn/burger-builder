@@ -18,3 +18,7 @@
 .Toolbar nav {
     height: 100%; /* this makes sure the nav items span the full height of the toolbar */
 }
+
+.Logo {
+    height: 80%;
+}
