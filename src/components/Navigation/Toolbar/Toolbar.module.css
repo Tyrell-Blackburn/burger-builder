@@ -22,3 +22,10 @@
 .Logo {
     height: 80%;
 }
+
+/* turns toolbar off if a mobile device */
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}

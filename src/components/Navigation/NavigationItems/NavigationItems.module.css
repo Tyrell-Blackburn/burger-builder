@@ -3,6 +3,16 @@
     padding: 0;
     list-style: none; /* to avoid applying the default list style when it gets added to an unordered list */
     display: flex; /* to align list items next to each other */
+    flex-flow: column; /* items will be stacked on top of each other */
     align-items: center; /* to align them center */
     height: 100%; /* to take the full height of the toolbar */
+}
+
+/* this is for desktop environment */
+@media (min-width: 500px) {
+    .NavigationItems {
+        margin: 0;
+        display: flex; /* this is so the link can be aligned vertically */
+        flex-flow: row; /* items will be arranged next to each other */
+    }
 }

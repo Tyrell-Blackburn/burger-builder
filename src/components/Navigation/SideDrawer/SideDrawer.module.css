@@ -24,9 +24,10 @@
 }
 
 .Close {
-    transform: translateX(-100); /* this will shift it to the left */
+    transform: translateX(-100%); /* this will shift it to the left */
 }
 
 .Logo {
     height: 9%;
+    margin-bottom: 32px;
 }

@@ -1,18 +1,14 @@
 .NavigationItem {
-    margin: 0;
+    margin: 10px 0; /* 10px top and bottom, 0px left and right, so spacing between links */
     box-sizing: border-box;
-    display: flex; /* this is so the link can be aligned vertically */
-    height: 100%;
-    width: auto;
-    align-items: center; /* this should be used with flex to align the items center */
+    display: block;
+    width: 100%;
 }
 
 .NavigationItem a {
-    color: white;
+    color: #8f5c2c;
     text-decoration: none;
-    height: 100%;
-    padding: 16px 10px; /* top/bottom left/right */
-    border-bottom: 4px solid transparent; /* this will be important when we hover over a link */
+    width: 100%;
     box-sizing: border-box; /* make sure the height includes the padding and the border */
     display: block; /* so height has an effect */
 }
@@ -20,7 +16,31 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a:active { /* will be assigned to links on the page we are active for */
-    background-color: #8f5c2c;
-    border-bottom: 4px solid #40a4c8;
-    color: white;
+    color: #40a4c8;
+}
+
+/* this is for desktop environment */
+@media (min-width: 500px) {
+    .NavigationItem {
+        margin: 0;
+        display: flex; /* this is so the link can be aligned vertically */
+        height: 100%;
+        width: auto;
+        align-items: center; /* this should be used with flex to align the items center */
+    }
+    
+    .NavigationItem a {
+        color: white;
+        height: 100%;
+        padding: 16px 10px; /* top/bottom left/right */
+        border-bottom: 4px solid transparent; /* this will be important when we hover over a link */
+    }
+    
+    .NavigationItem a:hover,
+    .NavigationItem a:active,
+    .NavigationItem a:active { /* will be assigned to links on the page we are active for */
+        background-color: #8f5c2c;
+        border-bottom: 4px solid #40a4c8;
+        color: white;
+    }
 }
